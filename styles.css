@@ -2,15 +2,20 @@
 box-sizing: border-box;
 }
 
+#timeline {
+  font-family: Bulo;
+  margin: , 0, 30px, 0;
+}
+
 #timeline::before {
   /* this is the vertical line */
   content: '';
   position: absolute;
   top: 0;
-  left: 435px;
+  left: 492px;
   height: 100%;
-  width: 4px;
-  background: blue;
+  width: 6px;
+  background: #AFDCF8;
 }
 
 .container {
@@ -22,49 +27,80 @@ nav {
   position: absolute;
   left: 0px;
   width: 200px;
-  margin-left:270px
+  margin-left:326px
 }
 
 
 div {
-  margin-left: 467px;
-  width: 484px;
+  margin-left: 536px;
+  width: 483px;
 }
 
 .timeline-block {
-  width: 15%;
-  border: 1px solid black;
+  width: 11.5%;
 }
 
+.timeline-block p {
+  text-align: right;
+  margin: 4px;
+}
+
+
 .timeline-content {
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 25px;
   background-color: #6CBFEE;
   font-family: "ff-tisa-sans-web", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  position: relative
+}
+
+.timeline-content:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid black;
+  left: 1px;
 }
 
 h1 {
   text-align: left;
   color: #FFF;
+  font-size: 18px;
 }
 
 .time {
   color: #6CBFEE;
-  font-size: 35px;
-  text-align: left;
+  font-size: 30px;
+  text-align: right;
 }
+
 
 .date {
   color: #BED0DB;
   font-size: 12px;
-  text-align: left;
+  text-align: right;
 }
 
 p {
   color: #FFF;
+  font-size: 12px;
 }
 
-p:hover {
-  background: blue;
+.timeline-content:hover {
+  background: #3594CB;
   color: #3594CB
+}
+
+img {
+  max-width: 100px;
+  float: right;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  left: 152px;
+  bottom: 27px;
 }
