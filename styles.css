@@ -2,24 +2,22 @@
 box-sizing: border-box;
 }
 
-#timeline {
-  font-family: Bulo;
-  margin: , 0, 30px, 0;
-}
 
 #timeline::before {
   /* this is the vertical line */
   content: '';
   position: absolute;
   top: 0;
-  left: 492px;
+  left: 502px;
   height: 100%;
   width: 6px;
   background: #AFDCF8;
+  top: 10px;
 }
 
-.container {
+article.container {
   position: relative;
+  margin: 10px;
 }
 
 
@@ -31,11 +29,6 @@ nav {
 }
 
 
-div {
-  margin-left: 536px;
-  width: 483px;
-}
-
 .timeline-block {
   width: 11.5%;
 }
@@ -45,13 +38,36 @@ div {
   margin: 4px;
 }
 
+p {
+  color: #FFF;
+  font-size: 12px;
+  font-family: "ff-tisa-sans-web", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+}
+
+.time {
+  color: #6CBFEE;
+  font-size: 30px;
+  text-align: right;
+  font-family: "ff-tisa-sans-web", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+}
+
+.date {
+  color: #BED0DB;
+  font-size: 10px;
+  text-align: right;
+  font-family: "ff-tisa-sans-web", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+}
+
 
 .timeline-content {
+  margin-left: 536px;
+  width: 483px;
   border-radius: 4px;
   padding: 25px;
   background-color: #6CBFEE;
   font-family: "ff-tisa-sans-web", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
-  position: relative
+  position: relative;
+  padding: 20px;
 }
 
 .timeline-content:before {
@@ -59,39 +75,23 @@ div {
   content: "";
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right:10px solid black;
-  left: 1px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right:7px solid #6CBFEE;
+  left: -7px;
+  top: 5px;
+}
+
+.timeline-content:hover {
+  background: #3594CB;
+  color: #3594CB;
 }
 
 h1 {
   text-align: left;
   color: #FFF;
   font-size: 18px;
-}
-
-.time {
-  color: #6CBFEE;
-  font-size: 30px;
-  text-align: right;
-}
-
-
-.date {
-  color: #BED0DB;
-  font-size: 12px;
-  text-align: right;
-}
-
-p {
-  color: #FFF;
-  font-size: 12px;
-}
-
-.timeline-content:hover {
-  background: #3594CB;
-  color: #3594CB
+  font-family: "ff-tisa-sans-web", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
 
 img {
@@ -103,4 +103,11 @@ img {
   position: absolute;
   left: 152px;
   bottom: 27px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  border-top: 1px solid #97D1F2;
+  margin:-5px 0;
 }
