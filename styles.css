@@ -2,6 +2,9 @@
 box-sizing: border-box;
 }
 
+#timeline {
+  position: relative;
+}
 
 #timeline::before {
   /* this is the vertical line */
@@ -13,6 +16,7 @@ box-sizing: border-box;
   width: 6px;
   background: #AFDCF8;
   top: 10px;
+  bottom: 0px;
 }
 
 article.container {
@@ -51,6 +55,11 @@ p {
   font-family: "ff-tisa-sans-web", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
 
+.time:hover {
+  color: #3594CB;
+  transition-duration: 3s;
+}
+
 .date {
   color: #BED0DB;
   font-size: 10px;
@@ -85,6 +94,7 @@ p {
 .timeline-content:hover {
   background: #3594CB;
   color: #3594CB;
+  transition-duration: 3s;
 }
 
 h1 {
@@ -97,11 +107,12 @@ h1 {
 img {
   max-width: 100px;
   float: right;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  border: 6px solid #AFDCF8;
   border-radius: 50%;
   position: absolute;
-  left: 152px;
+  left: 149px;
   bottom: 27px;
 }
 
